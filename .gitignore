@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.mwb.bak
+*.drawio.bkp
+~$*
+Thumbs.db

@@ -1,0 +1,9 @@
+* text=auto
+*.bat text eol=crlf
+*.sql text eol=lf
+*.csv text eol=lf
+*.png binary
+*.pdf binary
+*.xlsx binary
+*.docx binary
+*.mwb binary
