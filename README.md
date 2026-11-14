@@ -28,7 +28,7 @@ ShoeShop/
 ├── db/                                     база данных (пары 9–12), см. db/README.md
 │   ├── import/                             10 CSV из файлов импорта ДЭ
 │   ├── topotun.mwb                         модель MySQL Workbench
-│   ├── create_v1.sql, insert_data.sql, checks.sql
+│   ├── create_v1.sql, data.sql, queries.sql, checks.sql
 │   ├── backup/, backup.bat, restore.bat
 └── src/                                    код приложения (с занятия 5)
 ```
@@ -46,13 +46,15 @@ ShoeShop/
 ## Быстрый старт БД
 
 В MySQL Workbench по очереди открыть (**File → Open SQL Script**) и выполнить:
-`db/create_v1.sql` → `db/insert_data.sql` → `db/checks.sql`.
+`db/create_v1.sql` → `db/data.sql` → `db/checks.sql`.
+
+Запросы, которые затем используются в приложении, собраны отдельно в `db/queries.sql`.
 
 Из консоли:
 
 ```bat
 mysql -u root -p < db\create_v1.sql
-mysql -u root -p < db\insert_data.sql
+mysql -u root -p < db\data.sql
 ```
 
 Отчёт по проекту (`Отчёт.docx`) ведётся отдельно и в репозиторий не добавляется.
